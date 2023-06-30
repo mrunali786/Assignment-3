@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>simple website</title>
+    </head>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        nav{
+            width: 100%;
+            height: 75px;
+            line-height: 75px;
+            padding: 0px 100px;
+            position: fixed;
+            background-image: linear-gradient(#88bad1,#69bbd3);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+        }
+        nav ul{
+            float: right;
+        }
+        nav li{
+            display: inline-block;
+            list-style: none;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        nav li a{
+            text-transform: uppercase;
+            padding: 0px 30px;
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav li a:hover{
+            color: white;
+            transition: all 0.4s ease 0s;
+        }
+        nav .logo p{
+            font-size: 30px;
+            font-weight: bold;
+            float: left;
+            color: black;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            cursor: pointer;
+        }
+        .content-items img{
+            width: 100%;
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+        }
+        .centered{
+            font-size: 80px;
+            color: rgb(247, 235, 190);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+    <body>
+        <nav>
+            <div class="logo">
+                <p>NAVBAR</p>
+            </div>
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+            </ul>
+        </nav>
+        <div class="content-items">
+            <img src="wp2611170.jpg" alt="#" style="width: 100%;">
+            <div class="centered">WELCOME TO OUR WEBSITE</div>
+        </div>
+    </body>
+</html>
